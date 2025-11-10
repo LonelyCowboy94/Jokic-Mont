@@ -1,0 +1,17 @@
+
+// Backgrounds
+$background-header: linear-gradient(160deg, #215db6 50%, #05337c);
+$background-light: #FFFFFF;
+$background-linear-blue: linear-gradient(15deg, #2363c4 30%, #063279);
+
+// Font colors
+$color-font-light: #FFFFFF;
+$color-font-md: #333;
+
+// Font sizes
+$title-font-size: clamp(2rem, 1.7573rem + 1.0356vw, 3rem);
+$paragraph-font-size: clamp(0.3125rem, -0.3701rem + 2.9126vw, 3.125rem);
+$li-font-size: clamp(1.125rem, 3.034rem + 0.3883vw, 1.705rem);
+
+// Padding 
+$padding-section: clamp(3.125rem, 1.608rem + 6.4725vw, 9.375rem)  clamp(1.25rem, 0.7949rem + 1.9417vw, 3.125rem) clamp(4.375rem, 1.6444rem + 11.6505vw, 15.625rem);

@@ -1,0 +1,49 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as mix;
+
+.handwerkOnlineSection {
+    padding: clamp(3.125rem, 1.608rem + 6.4725vw, 9.375rem)  clamp(1.25rem, 0.7949rem + 1.9417vw, 3.125rem) clamp(4.375rem, 1.6444rem + 11.6505vw, 15.625rem);
+    position: relative;
+    width: 100%;
+    
+    background: $background-linear-blue;
+    z-index: 1;
+    overflow: hidden;
+    &__article {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        z-index: 2;
+        max-width: 70%;
+        @media (max-width: 1024px) {
+            max-width: 100%;
+        }
+    }
+
+    &__svgWrapper {
+        position: absolute;
+    top: 50px;
+    left: clamp(3.125rem, -11.2864rem + 61.4887vw, 62.5rem);
+    width: 800px;
+    height: 500px;
+    z-index: 1;  
+    }
+    &__svg {
+        top: 20px;
+        width: 100%;
+        height: 100%;
+    }
+    &__title, &__text {
+        @include mix.font-kanit;
+        color: $color-font-light;
+    }
+    &__title {
+        font-size: $title-font-size;
+        margin-left: $paragraph-font-size;
+    }
+    &__text {
+        padding: 20px 0;
+        font-size: clamp(1.5rem, 1.318rem + 0.7767vw, 2.25rem);
+        line-height: clamp(2rem, 1.7876rem + 0.9061vw, 2.875rem);
+    }
+}

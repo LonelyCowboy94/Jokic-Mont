@@ -1,0 +1,9 @@
+@use '../../../styles/variables' as *;
+
+.header {
+    position: sticky;
+    inset: 0;
+    width: 100%;
+    background: $background-header;
+    z-index: 10;
+}
